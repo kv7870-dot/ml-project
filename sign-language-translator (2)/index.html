@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language Translator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#0055ff',
+              'brand-secondary': '#3f83f8',
+              'base-100': '#ffffff',
+              'base-200': '#f9fafb',
+              'base-300': '#f3f4f6',
+              'base-content': '#1f2937',
+              'base-content-secondary': '#6b7280',
+            },
+            animation: {
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'spinner-ease-spin': 'spin 0.8s ease infinite',
+              'spinner-linear-spin': 'spin 0.8s linear infinite',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-base-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

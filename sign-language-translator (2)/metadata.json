@@ -1,0 +1,7 @@
+{
+  "name": "Sign Language Translator",
+  "description": "An application that uses your camera to detect hand gestures, translating them into English, Hindi, and Gujarati text with voice output.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
